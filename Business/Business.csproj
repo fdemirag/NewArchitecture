@@ -9,10 +9,16 @@
   <ItemGroup>
     <None Remove="Abstracts\" />
     <None Remove="Concretes\" />
+    <None Remove="Dtos\" />
+    <None Remove="Dtos\Requests\" />
+    <None Remove="Dtos\Responses\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstracts\" />
     <Folder Include="Concretes\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Dtos\Requests\" />
+    <Folder Include="Dtos\Responses\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />

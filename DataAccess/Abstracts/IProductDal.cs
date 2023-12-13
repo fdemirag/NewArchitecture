@@ -8,6 +8,6 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstracts;
 
-public interface IProductDal : IRepository<Product, Guid>, IAsyncRepository<Product, Guid>
+public interface IProductDal : IRepository<Product, int>, IAsyncRepository<Product, int>
 {
 }

@@ -1,4 +1,5 @@
-﻿using Entities.Concretes;
+﻿using Entities;
+using Entities.Concretes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -18,10 +19,12 @@ public class NorthwindContext : DbContext
     public DbSet<Product> Products { get; set; }
     public DbSet<Category>Categories { get; set; }
 
+    public DbSet<Customer> Customers { get; set; }
+
     public NorthwindContext(DbContextOptions dbContextOptions, IConfiguration configuration) : base(dbContextOptions)
     {
         Configuration = configuration;
-        Database.EnsureCreated();
+        //Database.EnsureCreated();
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

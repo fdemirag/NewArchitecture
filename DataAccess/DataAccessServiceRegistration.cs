@@ -18,10 +18,12 @@ public static class DataAccessServiceRegistration
     {
        // services.AddDbContext<NorthwindContext>(options => options.UseInMemoryDatabase("nArchitecture"));
 
-        services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(configuration.GetConnectionString("ETradeC")));
+        services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(configuration.GetConnectionString("Northwind")));
 
         services.AddScoped<IProductDal, EfProductDal>();
         services.AddScoped<ICategoryDal,EfCategoryDal>();
+
+        services.AddScoped<ICustomerDal, EfCustomerDal>();
 
         return services;
     }

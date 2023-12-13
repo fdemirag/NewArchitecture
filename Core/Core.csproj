@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.14" />
     <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="DataAccess\" />
@@ -16,6 +17,12 @@
     <None Remove="DataAccess\Repository\" />
     <None Remove="DataAccess\Dynamic\" />
     <None Remove="DataAccess\Paging\" />
+    <None Remove="CrossCuttingConcerns\" />
+    <None Remove="CrossCuttingConcerns\Exceptions\" />
+    <None Remove="CrossCuttingConcerns\Exceptions\Types\" />
+    <None Remove="CrossCuttingConcerns\Exceptions\HttpProblemDetails\" />
+    <None Remove="CrossCuttingConcerns\Exceptions\Handlers\" />
+    <None Remove="CrossCuttingConcerns\Exceptions\Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
@@ -23,5 +30,11 @@
     <Folder Include="DataAccess\Repository\" />
     <Folder Include="DataAccess\Dynamic\" />
     <Folder Include="DataAccess\Paging\" />
+    <Folder Include="CrossCuttingConcerns\" />
+    <Folder Include="CrossCuttingConcerns\Exceptions\" />
+    <Folder Include="CrossCuttingConcerns\Exceptions\Types\" />
+    <Folder Include="CrossCuttingConcerns\Exceptions\HttpProblemDetails\" />
+    <Folder Include="CrossCuttingConcerns\Exceptions\Handlers\" />
+    <Folder Include="CrossCuttingConcerns\Exceptions\Extensions\" />
   </ItemGroup>
 </Project>

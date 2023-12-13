@@ -12,6 +12,10 @@
     <None Remove="Dtos\" />
     <None Remove="Dtos\Requests\" />
     <None Remove="Dtos\Responses\" />
+    <None Remove="AutoMapper\" />
+    <None Remove="AutoMapper\Profiles\" />
+    <None Remove="Messages\" />
+    <None Remove="Rules\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstracts\" />
@@ -19,10 +23,18 @@
     <Folder Include="Dtos\" />
     <Folder Include="Dtos\Requests\" />
     <Folder Include="Dtos\Responses\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="AutoMapper\Profiles\" />
+    <Folder Include="Messages\" />
+    <Folder Include="Rules\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
     <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
     <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
   </ItemGroup>
 </Project>
